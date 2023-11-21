@@ -1,0 +1,46 @@
+*{
+    padding:0;
+    margin:0;
+    font-family: sans-serif;
+}
+body{
+    background:url('https://th.bing.com/th/id/R.394e3fddc5e09c6dbc5eede8d334c588?rik=ZyJSXBWeSlr3AQ&riu=http%3a%2f%2f1.bp.blogspot.com%2f_oFDQgW3nuwI%2fTUenVUDyEcI%2fAAAAAAAADL0%2f8v7lQuF8hv4%2fs1600%2fBig-rock-nature-computer-backgrounds.jpg&ehk=ZX%2fU2eMl9eI15W07XN6IYqLqw%2fGZbzJQEoVem2T%2fgxU%3d&risl=&pid=ImgRaw&r=0') no-repeat;
+    background-size:cover;
+}
+.Registration{
+    text-align:center;
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform:translate(-50%, -50%);
+    width:400px;
+}
+.Registration h4{
+    font-size:30px;
+    text-align:center;
+    text-transform:uppercase;
+    margin:40px 0;
+}
+.Registration input{
+    font-size:20px;
+    margin:10px 0;
+    padding:10px 5px;
+    width:100%;
+    border:0;
+    border-radius:5px;
+    outline:none;
+}
+.Registration button{
+    font-size:18px;
+    font-weight:bold;
+    margin:20px 0;
+    padding:10px 15px;
+    width:50%;
+    border:0;
+    border-radius:5px;
+    background-color:#fff!important;
+}
+.Registration button:hover{
+    color:red;
+}
+

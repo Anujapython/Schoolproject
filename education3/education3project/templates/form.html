@@ -1,0 +1,43 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Form</title>
+    <link rel="stylesheet" href="{% static 'form.css' %}">
+</head>
+<body>
+<div class="Form">
+    <h4>Form</h4>
+<form action="" method="post">
+    {% csrf_token %}
+    <input type="text" name="name" placeholder="Enter your name"><br>
+    <input type="date" name="dob" placeholder="Enter your DOB"><br>
+    <input type="text" name="age" placeholder="Enter age"><br>
+    <label for="gender"> Select you gender</label>
+<select id="gender" name="gender">
+	<option value="none" selected>Gender</option>
+	<option value="male">Male</option>
+	<option value="female">Female</option>
+	<option value="other">other</option>
+</select>
+    <br>
+    <input type="text" name="phno" placeholder="Enter your phone number"><br>
+    <input type="email" name="email" placeholder="Enter your email"><br>
+    <input type="text" name="address" placeholder="Enter your address"><br>
+    <label for="gender"> Select you Department</label>
+<select id="department" name="department">
+	<option value="none" selected>department</option>
+	<option value="m">Bca</option>
+	<option value="f">Bcom</option>
+	<option value="o">Bba</option>
+</select>
+    <br>
+    <input type="text" name="course" placeholder="Enter your course"><br>
+    <button type="submit">submit</button>
+    <button type="logout"><a href="{% url 'logout' %}">logout</button>
+
+</form>
+    </div>
+</body>
+</html>
